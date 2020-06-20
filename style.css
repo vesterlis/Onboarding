@@ -1,0 +1,36 @@
+html    {
+height: 100%;
+}
+
+body    {
+margin: 0;
+height: 100%;
+display: flex;
+flex-direction: column;
+}
+
+.wrapper    {
+
+}
+
+header  {
+flex: 0 0 24px;
+background-color: gray;
+margin: 16px 24px 0 24px;
+display: flex;
+justify-content: space-between;
+}
+
+.main-content   {
+    flex: 1 0 auto;
+    background-color: mediumorchid;
+    width: 31%;
+    margin-left: 34.5%;
+    margin-right: 34.5%;
+}
+
+footer  {
+flex: 0 0 60px;
+background-color: lightseagreen;
+}
+
