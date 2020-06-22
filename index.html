@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <span>
+        <span class="logo">
             Pay Super
         </span>
         <select name="language">
@@ -23,6 +23,8 @@
         <div class="progress-bar">
             <p class="progressBar__steps">3/3 steps</p>
             <p>About your company and games</p>
+            <div class="progress-line">
+            </div>
         </div>
         <div class="tell-us">
             <h1>
@@ -37,13 +39,14 @@
             </label>
                 <br>
             <input type="text" name="company-name" id="name-field" required>
+            <hr>
             <label for="website-field">
                 Website
             </label>
                 <br>
             <input type="url" name="website" id="website-field" required>
+            <hr>
 
-            <br>
             <label for="income-field">
                 Annual income
             </label>
@@ -52,7 +55,7 @@
                 <option value="$10.000 - $100.000">$10.000 - $100.000</option>
                 <option value="$100.000 - $1.000.000">$100.000 - $1.000.000</option>
                 </select>
-            <br>
+            <hr>
             <label for="employees-field">
                 Number of employees
             </label>
@@ -62,36 +65,50 @@
                     <option value="10 - 100">10 - 100</option>
                     <option value="More than 100">More than 100</option>
                     </select>
+                    <hr>
     </form>
         </div>
         <div class="activity">
             <p>Kind of your activity:</p>
-            <form action="#">
-                <input type="radio" name="your-activity" value="Dev games"> 
-                Develop and publish your games
+            <form class="radio" action="#">
+                <input type="radio" name="your-activity" value="Dev games" id="Dev-games"> 
+                <label for="Dev-games">
+                    Develop and publish your games
+                </label>
                 <br>
-                <input type="radio" name="your-activity" value="Publish other games">
-                Publish games of other companies
+                <input type="radio" name="your-activity" value="Publish other games" id="Publish-other-games">
+                <label for="Publish-other-games">
+                    Publish games of other companies
+                </label>
                 <br>
-                <input type="radio" name="your-activity" value="Publish my games">
-                Publish your games through other publishers
+                <input type="radio" name="your-activity" value="Publish my games" in="Publish-my-games">
+                <label for="Publish-my-games">
+                    Publish your games through other publishers
+                </label>
                 <br>
-                <input type="radio" name="your-activity" value="Other activity">
-                Other
+                <input type="radio" name="your-activity" value="Other activity" id="Other-activity">
+                <label for="Other-activity">
+                    Other
+                </label>
             </form>
         </div>
         <div class="monetization">
             <p>What do you use for monetization?</p>
             <form action="#">
-                <input type="checkbox" name="paid-subscribers">Paid subscriptions
+                <input type="checkbox" name="paid-subscribers" id="paid-subscriptions">
+                <label for="paid-subscriptions">Paid subscriptions</label>
                 <br>
-                <input type="checkbox" name="in-game-ad">In-game advertising
+                <input type="checkbox" name="in-game-ad" id="in-game-advertising">
+                <label for="in-game-advertising">In-game advertising</label>
                 <br>
-                <input type="checkbox" name="in-game-purchases">In-game purchases
+                <input type="checkbox" name="in-game-purchases" id="in-game-purchase">
+                <label for="in-game-purchase">In-game purchases</label>
                 <br>
-                <input type="checkbox" name="premium-access">Premium  access
+                <input type="checkbox" name="premium-access" id="premium">
+                <label for="Premium">Premium  access</label>
                 <br>
-                <input type="checkbox" name="other-monetization">Other
+                <input type="checkbox" name="other-monetization" id="other">
+                <label for="other">Other</label>
                 <br>
             </form>
         </div>
