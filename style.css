@@ -88,27 +88,29 @@ color: #3E4345;
 .profile input,
 .profile select  {
     width: 100%;
-    border: none;
 }
 
-.profile select {
-    margin: 10px 0 10px 0;
-}
+.label {
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .input {
+    border: 0;
+    border-bottom: 1px solid #E3E5E6;
+    height: 40px;
+    width: 200px;
+  }
 
 .profile label,
 .activity p,
 .monetization p,
 .supported-platforms p   {
 color: #919699;
-font-size: 16px;
+font-size: 12px;
 line-height: 24px;
 letter-spacing: 0.4px;
 }
-
-hr  {
-    color: #E3E5E6;
-}
-
 
 .activity,
 .monetization,
@@ -119,8 +121,40 @@ line-height: 36px;
 letter-spacing: 0.44px;
 }
 
+option {
+line-height: 30px;
+}
+
 .activity p {
 color: #919699;
+}
+
+.select {
+    position: relative;
+}
+
+.select select {
+    display: block;
+    width: 100%; 
+    padding: 5px 0 10px 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.arrow {
+    position: absolute;
+    pointer-events: none;
+    left: 430px;
+    top: 38px;
+    width: 10px;
+    height: 5px;
+  }
+
+  form .input:focus   {
+    border-bottom: 1px solid blue;
 }
 
 
