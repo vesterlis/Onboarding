@@ -13,7 +13,6 @@ font-style: normal;
 
 header  {
     flex: 0 0 24px;
-    background-color: gray;
     margin: 16px 24px 0 24px;
     display: flex;
     justify-content: space-between;
@@ -23,9 +22,41 @@ header  {
         font-weight: 500;
     }
 
-.wrapper    {
-display: flex;
-}
+    .arrow-lang {
+        cursor: pointer;
+    }
+
+    .lang-menu  {
+        position: relative;
+        display: inline-block;
+    }
+
+    .lang-menu img {
+        position: absolute;
+        top: 8px;
+        right: 28px;
+    }
+
+    .lang-menu-content  {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        background-color: #f9f9f9;
+        border: 1px solid black;
+    }
+
+    .lang-menu-content span    {
+        color: black;
+        display: block;
+    }
+
+    .lang-menu:hover .lang-menu-content {
+        display: block;
+    }
+
+    .lang-menu-content span:hover  {
+        background-color: #3D7BF5;
+    }
 
 main  {
     flex: 1 0 auto;
@@ -90,19 +121,6 @@ color: #3E4345;
     width: 100%;
 }
 
-.label {
-    display: block;
-    margin-top: 10px;
-    margin-left: 10px;
-  }
-
-  .input {
-    border: 0;
-    border-bottom: 1px solid #E3E5E6;
-    height: 40px;
-    width: 200px;
-  }
-
 .profile label,
 .activity p,
 .monetization p,
@@ -126,10 +144,6 @@ option {
 line-height: 30px;
 }
 
-.activity p {
-color: #919699;
-}
-
 .select {
     position: relative;
 }
@@ -137,7 +151,7 @@ color: #919699;
 .select select {
     display: block;
     width: 100%; 
-    padding: 5px 0 10px 10px;
+    padding: 15px 0 10px 10px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -149,25 +163,40 @@ color: #919699;
     position: absolute;
     pointer-events: none;
     left: 430px;
-    top: 38px;
+    top: 40px;
     width: 10px;
     height: 5px;
   }
 
-
-label.label:focus-within {
-color: #3D7BF5;
+  .input    {
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid #E3E5E6;
+    height: 50px;
+    width: 200px; 
   }
 
-.profile-form .input:focus   {
-    border-bottom: 1px solid #3D7BF5;
-    outline: none;
-}
+  .input:focus  {
+    border-bottom-color: #3D7BF5;
+  }
 
-.activity p:focus-within {
+  .label    {
+    display: block;
+    position: relative;
+    padding-top: 20px;
+  }
+
+  .title    {
+    position: absolute;
+    left: 10px;
+    right: 0;
+    top: 10px;
+  }
+
+.input:focus + .title {
     color: #3D7BF5;
 }
-
+          
 .custom-radio {
     position: absolute;
     z-index: -1;
@@ -196,7 +225,7 @@ color: #3D7BF5;
     
     .custom-radio:checked+label::before  {
         border-color:#3D7BF5;
-        background-color: #3D7BF5;
+        background-color: white;
         background-image: url("Img/Path(1).png");
     }
     
