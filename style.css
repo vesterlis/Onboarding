@@ -156,6 +156,59 @@ option {
 line-height: 30px;
 }
 
+
+.select  {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    background-color: gray;
+    }
+
+.select__arrow {
+    position: absolute;
+    pointer-events: none;
+    left: 430px;
+    top: 40px;
+    width: 10px;
+    height: 5px;
+}
+
+.select__content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 25px;
+    min-width: 410px;
+    box-shadow: 0px 8px 20px 0px rgba(97, 93, 93, 0.2);
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 10px 0;
+}
+
+    .select__summ    {
+        display: block;
+        color: black;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.25px;
+        padding: 5px 40px 5px 20px;
+    }
+
+        .select__100:focus  {
+            color: black;
+         }
+
+.select:hover .select__content {
+    display: block;
+}
+
+.select__summ:hover  {
+    cursor: pointer;
+    color:#3D7BF5;
+    background-color: rgba(142, 163, 231, 0.1);
+}
+/*
+
 .select {
     position: relative;
 }
@@ -179,7 +232,7 @@ line-height: 30px;
     width: 10px;
     height: 5px;
   }
-
+*/
   .input    {
     outline: none;
     border: 0;
