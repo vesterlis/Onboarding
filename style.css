@@ -158,10 +158,12 @@ line-height: 30px;
 
 
 .select  {
+    cursor: pointer;
     position: relative;
     display: inline-block;
     width: 100%;
-    background-color: gray;
+    height: 73px;
+    border-bottom: 1px solid #E3E5E6;
     }
 
 .select__arrow {
@@ -177,7 +179,7 @@ line-height: 30px;
     display: none;
     position: absolute;
     z-index: 1;
-    top: 25px;
+    top: 30px;
     min-width: 410px;
     box-shadow: 0px 8px 20px 0px rgba(97, 93, 93, 0.2);
     background-color: #f9f9f9;
@@ -207,32 +209,7 @@ line-height: 30px;
     color:#3D7BF5;
     background-color: rgba(142, 163, 231, 0.1);
 }
-/*
 
-.select {
-    position: relative;
-}
-
-.select select {
-    display: block;
-    width: 100%; 
-    padding: 15px 0 10px 10px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    font-family: inherit;
-    font-size: 16px;
-}
-
-.arrow {
-    position: absolute;
-    pointer-events: none;
-    left: 430px;
-    top: 40px;
-    width: 10px;
-    height: 5px;
-  }
-*/
   .input    {
     outline: none;
     border: 0;
